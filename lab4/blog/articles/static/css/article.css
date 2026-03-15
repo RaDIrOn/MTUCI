@@ -6,9 +6,12 @@ body {
 
 .header {
     background: #16a085;
+    width: 1000px;
     padding: 20px 0;
     margin-bottom: 30px;
     border-bottom: 3px solid #0e8c73;
+    position: relative;
+    text-align: right;
 }
 
 .header img {
@@ -27,6 +30,7 @@ body {
     min-height: 500px;
 }
 
+/* главная страница */
 .one-post {
     margin-bottom: 40px;
     padding: 20px;
@@ -90,28 +94,7 @@ body {
     margin: 0 0 10px 0;
 }
 
-.footer {
-    margin-top: 30px;
-    padding-top: 20px;
-    border-top: 2px solid rgba(255, 255, 255, 0.3);
-    text-align: right;
-}
-
-.back-link {
-    color: #ffffff;
-    text-decoration: none;
-    padding: 8px 15px;
-    background: #16a085;
-    border-radius: 5px;
-    transition: background 0.3s;
-    font-weight: bold;
-}
-
-.back-link:hover {
-    background: #0e8c73;
-    text-decoration: none;
-}
-
+/* страницы статьи*/
 .article .post-title {
     font-size: 36px;
     text-align: center;
@@ -134,4 +117,26 @@ body {
     padding: 30px;
     border-radius: 10px;
     margin-bottom: 30px;
+}
+
+.footer {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid rgba(255, 255, 255, 0.3);
+    text-align: right;
+}
+
+.back-link {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 15px;
+    background: #16a085;
+    border-radius: 5px;
+    transition: background 0.3s;
+    font-weight: bold;
+}
+
+.back-link:hover {
+    background: #0e8c73;
+    text-decoration: none;
 }

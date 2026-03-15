@@ -21,6 +21,41 @@ body {
     margin: 0 auto;
 }
 
+.header-links {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 14px;
+}
+
+.header-links a, .user-info {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.user-info {
+    font-weight: bold;
+}
+
+.new-post-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background: white;
+    color: #16a085 !important;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s;
+    margin-left: 15px;
+}
+
+.new-post-btn:hover {
+    background: #ecf0f1;
+    transform: scale(1.05);
+}
+
 .content, .archive {
     width: 960px;
     margin: 0 auto;
@@ -139,16 +174,26 @@ body {
     text-decoration: none;
 }
 
-/* lab 5*/
-body.create-post .content {
-    width: 800px;
+/* lab 5 и 6 */
+body.create-post .content,
+body.register .content,
+body.login .content {
+    width: 500px;
     margin: 40px auto;
     background: rgba(0, 0, 0, 0.1);
     padding: 40px;
     border-radius: 10px;
 }
 
-body.create-post h1 {
+/* lab5 */
+body.create-post .content {
+    width: 800px;
+}
+
+/* Общие заголовки форм */
+body.create-post h1,
+body.register h1,
+body.login h1 {
     text-align: center;
     margin-top: 0;
     margin-bottom: 30px;
@@ -157,7 +202,14 @@ body.create-post h1 {
     padding-bottom: 20px;
 }
 
-.post-form {
+/* lab6 */
+body.register h1,
+body.login h1 {
+    font-size: 32px;
+}
+
+/* Общие стили для всех форм */
+.post-form, .auth-form {
     max-width: 600px;
     margin: 0 auto;
 }
@@ -241,4 +293,38 @@ textarea.form-control {
     border-radius: 5px;
     text-align: center;
     font-weight: bold;
+}
+
+/* специфичное для форм авторизации */
+.auth-form {
+    max-width: 400px;
+}
+
+.auth-form .form-group {
+    margin-bottom: 20px;
+}
+
+.auth-form label {
+    font-size: 16px;
+}
+
+.auth-form .form-control {
+    padding: 10px;
+}
+
+.auth-links {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.auth-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.auth-links a:hover {
+    text-decoration: underline;
 }
