@@ -77,6 +77,11 @@ body {
     transform: scale(1.02);
 }
 
+.one-post.folded .article-info,
+.one-post.folded .article-text {
+    display: none;
+}
+
 .post-title {
     margin: 0 0 10px 0;
     font-size: 28px;
@@ -349,9 +354,4 @@ textarea.form-control {
 
 .fold-button:hover {
     background: rgba(255, 255, 255, 0.3);
-}
-
-.one-post.folded .article-info,
-.one-post.folded .article-text {
-    display: none;
 }

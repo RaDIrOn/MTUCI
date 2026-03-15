@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Архив всех статей</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/article.css' %}">
+</head>
+<body class="archive">
+    <div class="header">
+        <img src="{% static 'img/dpb-logo.png' %}" alt="Логотип" class="logo">
+        
+        <div class="header-text-area">
+            <p class="service-title">Коллективный блог</p>
+            {% if user.is_authenticated %}
+                <span class="user-info">{{ user.username }}</span>
+                <a href="/logout/" class="auth-btn">Выйти</a>
+            {% else %}
+                <a href="/login/" class="auth-btn">Вход</a>
+                <a href="/register/" class="auth-btn register-btn">Регистрация</a>
+            {% endif %}
+        </div>
+        
+        <div class="icons-for-parallax">
+            <img class="icon-for-parallax-first" src="{% static 'img/parallax1.png' %}" alt="Иконка 1">
+        </div>
+    </div>
+    
+    <div class="archive">
+        {% for post in posts %}
+        <div class="one-post">
+            <div class="post-managment">
+                <h2 class="post-title">
+                    <a href="/article/{{ post.id }}">{{ post.title }}</a>
+                </h2>
+                <p class="fold-button">Свернуть</p>
+            </div>
+            <div class="article-info">
+                <div class="article-author">{{ post.author.username }}</div>
+                <div class="article-created-date">{{ post.created_date }}</div>
+            </div>
+            <p class="article-text">{{ post.get_excerpt }}</p>
+            <div class="one-post-shadow"></div>
+        </div>
+        {% endfor %}
+    </div>
+    
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <script src="{% static 'js/helloworld.js' %}"></script>
+    <script src="{% static 'js/fold-post.js' %}"></script>
+    <script src="{% static 'js/highlight-post.js' %}"></script>
+    <script src="{% static 'js/parallax.js' %}"></script>
+</body>
+</html>
