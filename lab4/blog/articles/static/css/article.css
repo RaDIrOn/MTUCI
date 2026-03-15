@@ -1,0 +1,137 @@
+body {
+    background: #1abc9c !important;
+    font-family: Tahoma, Arial, sans-serif !important;
+    color: #ffffff !important;
+}
+
+.header {
+    background: #16a085;
+    padding: 20px 0;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #0e8c73;
+}
+
+.header img {
+    display: block;
+    width: 318px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.content, .archive {
+    width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    min-height: 500px;
+}
+
+.one-post {
+    margin-bottom: 40px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.one-post:hover {
+    background: rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+}
+
+.post-title {
+    margin: 0 0 10px 0;
+    font-size: 28px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 10px;
+}
+
+.post-title a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.post-title a:hover {
+    color: #ecf0f1;
+    text-decoration: underline;
+}
+
+.article-info {
+    overflow: hidden;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
+}
+
+.article-author {
+    width: 50%;
+    float: left;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.article-created-date {
+    width: 50%;
+    float: left;
+    text-align: right;
+    color: #ecf0f1;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.article-text {
+    line-height: 1.6;
+    font-size: 16px;
+    clear: both;
+}
+
+.article-text p {
+    margin: 0 0 10px 0;
+}
+
+.footer {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid rgba(255, 255, 255, 0.3);
+    text-align: right;
+}
+
+.back-link {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 15px;
+    background: #16a085;
+    border-radius: 5px;
+    transition: background 0.3s;
+    font-weight: bold;
+}
+
+.back-link:hover {
+    background: #0e8c73;
+    text-decoration: none;
+}
+
+.article .post-title {
+    font-size: 36px;
+    text-align: center;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.article .article-info {
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    border-bottom: none;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 50px;
+}
+
+.article .article-text {
+    font-size: 18px;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
