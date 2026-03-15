@@ -1,0 +1,376 @@
+body {
+    background: #1abc9c !important;
+    font-family: Tahoma, Arial, sans-serif !important;
+    color: #ffffff !important;
+}
+
+.header {
+    background: #16a085;
+    padding: 20px 0;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #0e8c73;
+    position: relative;
+    text-align: right;
+}
+
+.header img {
+    display: block;
+    width: 318px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.header-links {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 14px;
+}
+
+.header-links a, .user-info {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.user-info {
+    font-weight: bold;
+}
+
+.new-post-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background: white;
+    color: #16a085 !important;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s;
+    margin-left: 15px;
+}
+
+.new-post-btn:hover {
+    background: #ecf0f1;
+    transform: scale(1.05);
+}
+
+.content, .archive {
+    width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    min-height: 500px;
+}
+
+.one-post {
+    margin-bottom: 40px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.one-post:hover {
+    background: rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+}
+
+.post-title {
+    margin: 0 0 10px 0;
+    font-size: 28px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 10px;
+}
+
+.post-title a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.post-title a:hover {
+    color: #ecf0f1;
+    text-decoration: underline;
+}
+
+.article-info {
+    overflow: hidden;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
+}
+
+.article-author {
+    width: 50%;
+    float: left;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.article-created-date {
+    width: 50%;
+    float: left;
+    text-align: right;
+    color: #ecf0f1;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.article-text {
+    line-height: 1.6;
+    font-size: 16px;
+    clear: both;
+}
+
+.article-text p {
+    margin: 0 0 10px 0;
+}
+
+.article .post-title {
+    font-size: 36px;
+    text-align: center;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.article .article-info {
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    border-bottom: none;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 50px;
+}
+
+.article .article-text {
+    font-size: 18px;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.footer {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid rgba(255, 255, 255, 0.3);
+    text-align: right;
+}
+
+.back-link {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 15px;
+    background: #16a085;
+    border-radius: 5px;
+    transition: background 0.3s;
+    font-weight: bold;
+}
+
+.back-link:hover {
+    background: #0e8c73;
+    text-decoration: none;
+}
+
+/* lab 5 и 6 */
+body.create-post .content,
+body.register .content,
+body.login .content {
+    width: 500px;
+    margin: 40px auto;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+/* lab5 */
+body.create-post .content {
+    width: 800px;
+}
+
+/* общие заголовки форм */
+body.create-post h1,
+body.register h1,
+body.login h1 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 36px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 20px;
+}
+
+/* lab6 */
+body.register h1,
+body.login h1 {
+    font-size: 32px;
+}
+
+/* общие стили для всех форм */
+.post-form, .auth-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.9);
+    font-size: 16px;
+    font-family: Tahoma, Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.form-control:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    background: white;
+}
+
+textarea.form-control {
+    resize: vertical;
+    min-height: 200px;
+}
+
+.form-actions {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.submit-btn, .cancel-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.submit-btn {
+    background: #16a085;
+    color: white;
+}
+
+.submit-btn:hover {
+    background: #0e8c73;
+    transform: translateY(-2px);
+}
+
+.cancel-btn {
+    background: #95a5a6;
+    color: white;
+}
+
+.cancel-btn:hover {
+    background: #7f8c8d;
+    transform: translateY(-2px);
+}
+
+.errors {
+    margin-top: 20px;
+    padding: 15px;
+    background: #e74c3c;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* специфичное для форм авторизации */
+.auth-form {
+    max-width: 400px;
+}
+
+.auth-form .form-group {
+    margin-bottom: 20px;
+}
+
+.auth-form label {
+    font-size: 16px;
+}
+
+.auth-form .form-control {
+    padding: 10px;
+}
+
+.auth-links {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.auth-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.auth-links a:hover {
+    text-decoration: underline;
+}
+
+/* lab 7 */
+.post-managment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.fold-button {
+    cursor: pointer;
+    padding: 5px 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    font-size: 12px;
+    transition: background 0.3s;
+    user-select: none;
+    margin: 0;
+}
+
+.fold-button:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.one-post.folded .article-info,
+.one-post.folded .article-text {
+    display: none;
+}
+
+/* lab8*/
+.one-post {
+    position: relative;
+    z-index: 1;
+}
+
+.one-post-shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: black;
+    z-index: -1;
+    opacity: 0;
+    border-radius: 8px;
+    transition: opacity 0.3s;
+}
